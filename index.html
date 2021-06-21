@@ -6,6 +6,40 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h1 id="title">Survey Form</h1>
+<h1 id="title">Survey Form</h1> <!-- 1 -->
+<p id="description"></p>	<!-- 2 -->
+<form id="survey-form"> <!-- 3 -->
+	<label for="name" id="name-label">Name: </label>
+	<input type="text" id="name" name="name" placeholder="Enter your name" required> <!-- 4 --> <br><br>
+	<label for="email" id="email-label">Email: </label>
+	<input type="email" id="email" name="email" placeholder="Enter your Email" required>  <!-- 5 & 6 --> <br><br>
+	<label for="number" id="number-label">Age (optional): </label>
+	<input type="number" id="number" name="number" min="0" max="99" placeholder="Enter your age"> <!-- 7, 8, 10 & 11 --> <br><br>
+	<label for="dropdown">Your Cars Name: </label>
+        <input list="cars" id="dropdown">
+        <datalist id="cars">
+            <option value="BMW" />
+            <option value="Bentley" />
+            <option value="Mercedes" />
+            <option value="Audi" />
+            <option value="Volkswagen" />
+        </datalist> <!--12 --><br><br>
+    <label for="region">Select your region? </label><br>
+    <input type="radio" name="region" value="America">America
+    <input type="radio" name="region" value="Asia">Asia
+    <input type="radio" name="region" value="Europe">Europe
+    <input type="radio" name="region" value="Africa">Africa<br><br>
+    <!-- 13 -->
+	<label for="interest">Select your area of interst? </label><br>
+    <input type="checkbox" name="interest" value="Design">Designing
+    <input type="checkbox" name="interest" value="Development">Development
+    <input type="checkbox" name="interest" value="Test">Testing
+    <input type="checkbox" name="interest" value="others">others<br><br>
+    <!-- 14 -->
+    <label for="query">Any query/suggestions ? </label><br>
+    <input type="textarea" name="query" id="query"><br><br>
+    <!-- 15 -->
+    <button id="submit">SUBMIT</button>
+</form>
 </body>
 </html>
