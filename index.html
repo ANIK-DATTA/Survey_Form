@@ -6,34 +6,35 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div class="content">
+<div class="container">
 
-<header>
+<header class="title">
     <h1 id="title">Survey Form</h1> <!-- 1 -->
     <p id="description">Thank you for taking your time.</p>	<!-- 2 -->
 </header>
 
 <main>
+
     <form id="survey-form"> <!-- 3 -->
     
     <section class="group">
 	   <label for="name" id="name-label">Name: </label>
-	   <input type="text" id="name" name="name" placeholder="Enter your name" required> <!-- 4 --> <br><br>
+	   <input type="text" class="input" id="name" name="name" placeholder="Enter your name" required> <!-- 4 --> 
     </section>
     
     <section class="group">
 	   <label for="email" id="email-label">Email: </label>
-	   <input type="email" id="email" name="email" placeholder="Enter your Email" required>  <!-- 5 & 6 --> <br><br>
+	   <input type="email" class="input" id="email" name="email" placeholder="Enter your Email" required>  <!-- 5 & 6 --> 
     </section>
     
     <section class="group">
 	   <label for="number" id="number-label">Age<span> (optional)</span>: </label>
-	   <input type="number" id="number" name="number" min="0" max="99" placeholder="Enter your age"> <!-- 7, 8, 10 & 11 -->    <br><br>
+	   <input type="number" class="input" id="number" name="number" min="0" max="99" placeholder="Enter your age"> <!-- 7, 8, 10 & 11 -->    
     </section>
     
     <section class="group">
 	   <label for="region">Region: </label>
-        <input list="dropdown" id="region">
+        <input list="dropdown" class="input" id="region">
         <datalist id="dropdown">
             <option value="North America" />
             <option value="Europe" />
@@ -45,24 +46,24 @@
     
     <section class="group">
         <label for="gender">Select your gender? </label><br>
-        <input type="radio" name="gender" value="Male">Male
-        <input type="radio" name="gender" value="Female">Female
-        <input type="radio" name="gender" value="Others">Others<br><br>
+        <input type="radio" name="gender" class="radio" value="Male">Male
+        <input type="radio" name="gender" class="radio" value="Female">Female
+        <input type="radio" name="gender" class="radio" value="Others">Others
     <!-- 13 -->
     </section>
     
     <section class="group">
-        <label for="interest">Select your area of interest? </label><br>
-        <input type="checkbox" name="interest" value="Design">Designing
-        <input type="checkbox" name="interest" value="Development">Development
-        <input type="checkbox" name="interest" value="Test">Testing
-        <input type="checkbox" name="interest" value="Others">Others<br><br>
+        <label for="interest">Select your area of interest? </label>
+        <input type="checkbox" name="interest" class="checkbox" value="Design">Designing
+        <input type="checkbox" name="interest" class="checkbox" value="Development">Development
+        <input type="checkbox" name="interest" class="checkbox" value="Test">Testing
+        <input type="checkbox" name="interest" class="checkbox" value="Others">Others
     <!-- 14 -->
     </section>
     
     <section class="group">
-        <label for="query">Any query/suggestions ? </label><br>
-        <textarea id="query"></textarea><br><br>
+        <label for="textarea">Any query/suggestions ? </label>
+        <textarea id="textarea"></textarea>
     <!-- 15 -->
     </section>
     
