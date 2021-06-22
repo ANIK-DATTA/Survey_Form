@@ -6,40 +6,72 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h1 id="title">Survey Form</h1> <!-- 1 -->
-<p id="description"></p>	<!-- 2 -->
-<form id="survey-form"> <!-- 3 -->
-	<label for="name" id="name-label">Name: </label>
-	<input type="text" id="name" name="name" placeholder="Enter your name" required> <!-- 4 --> <br><br>
-	<label for="email" id="email-label">Email: </label>
-	<input type="email" id="email" name="email" placeholder="Enter your Email" required>  <!-- 5 & 6 --> <br><br>
-	<label for="number" id="number-label">Age (optional): </label>
-	<input type="number" id="number" name="number" min="0" max="99" placeholder="Enter your age"> <!-- 7, 8, 10 & 11 --> <br><br>
-	<label for="dropdown">Your Cars Name: </label>
-        <input list="cars" id="dropdown">
-        <datalist id="cars">
-            <option value="BMW" />
-            <option value="Bentley" />
-            <option value="Mercedes" />
-            <option value="Audi" />
-            <option value="Volkswagen" />
+<div class="content">
+
+<header>
+    <h1 id="title">Survey Form</h1> <!-- 1 -->
+    <p id="description">Thank you for taking your time.</p>	<!-- 2 -->
+</header>
+
+<main>
+    <form id="survey-form"> <!-- 3 -->
+    
+    <section class="group">
+	   <label for="name" id="name-label">Name: </label>
+	   <input type="text" id="name" name="name" placeholder="Enter your name" required> <!-- 4 --> <br><br>
+    </section>
+    
+    <section class="group">
+	   <label for="email" id="email-label">Email: </label>
+	   <input type="email" id="email" name="email" placeholder="Enter your Email" required>  <!-- 5 & 6 --> <br><br>
+    </section>
+    
+    <section class="group">
+	   <label for="number" id="number-label">Age<span> (optional)</span>: </label>
+	   <input type="number" id="number" name="number" min="0" max="99" placeholder="Enter your age"> <!-- 7, 8, 10 & 11 -->    <br><br>
+    </section>
+    
+    <section class="group">
+	   <label for="dropdown">Region: </label>
+        <input list="region" id="dropdown">
+        <datalist id="region">
+            <option value="North America" />
+            <option value="Europe" />
+            <option value="Asia" />
+            <option value="Africa" />
+            <option value="Others" />
         </datalist> <!--12 --><br><br>
-    <label for="region">Select your region? </label><br>
-    <input type="radio" name="region" value="America">America
-    <input type="radio" name="region" value="Asia">Asia
-    <input type="radio" name="region" value="Europe">Europe
-    <input type="radio" name="region" value="Africa">Africa<br><br>
+    </section>
+    
+    <section class="group">
+        <label for="gender">Select your gender? </label><br>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Others">Others<br><br>
     <!-- 13 -->
-	<label for="interest">Select your area of interst? </label><br>
-    <input type="checkbox" name="interest" value="Design">Designing
-    <input type="checkbox" name="interest" value="Development">Development
-    <input type="checkbox" name="interest" value="Test">Testing
-    <input type="checkbox" name="interest" value="others">others<br><br>
+    </section>
+    
+    <section class="group">
+        <label for="interest">Select your area of interest? </label><br>
+        <input type="checkbox" name="interest" value="Design">Designing
+        <input type="checkbox" name="interest" value="Development">Development
+        <input type="checkbox" name="interest" value="Test">Testing
+        <input type="checkbox" name="interest" value="Others">Others<br><br>
     <!-- 14 -->
-    <label for="query">Any query/suggestions ? </label><br>
-    <input type="textarea" name="query" id="query"><br><br>
+    </section>
+    
+    <section class="group">
+        <label for="query">Any query/suggestions ? </label><br>
+        <input type="textarea" name="query" id="query"><br><br>
     <!-- 15 -->
-    <button id="submit">SUBMIT</button>
+    </section>
+    
+    <section class="group">
+        <button id="submit">SUBMIT</button><!-- 16 -->
+        </section>
+
 </form>
+</main>
+</div>
 </body>
 </html>
